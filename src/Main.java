@@ -43,8 +43,8 @@ public class Main {
         int money = 29000;
         int total = 0;
         for (int i = 1; i < 13; i++) {
-            total = total + total / 100;
-            total = total + money;
+            total += money;
+            total += total / 100;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
         }
         System.out.println("__________________________");
